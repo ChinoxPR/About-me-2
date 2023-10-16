@@ -18,12 +18,18 @@ namespace About_me_2.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Privacy
+            ()
         {
             return View();
         }
 
         public IActionResult ContactInfo(string Info)
+        {
+            return View();
+        }
+
+        public IActionResult MyProjects()
         {
             return View();
         }
