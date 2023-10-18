@@ -14,6 +14,7 @@ html
   position: relative;
   min-height: 100%;
   font-size:14px;
+  scroll-behavior:smooth;
 }
 
 .Paradisebody 
@@ -37,7 +38,7 @@ html
 {
     
     position:absolute;
-    left:900px;
+    left:800px;
 
 }
 * {
@@ -75,6 +76,8 @@ input[type=submit] {
 
 /* Create two columns that float next to eachother */
 .column {
+    
+    top:150px;
     float: left;
     width: 50%;
     margin-top: 6px;
@@ -107,4 +110,34 @@ input[type=submit] {
         transform: translate(0px);
         opacity: 1;
     }
+}
+.AboutMeColumn
+{
+    float:left;
+    width:50%;
+}
+footer {
+    color:floralwhite;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+    padding: 25px;
+}
+.column2 {
+    float: left;
+    width: 50%;
+    text-align:center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
